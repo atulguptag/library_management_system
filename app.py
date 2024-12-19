@@ -53,7 +53,7 @@ def validate_member_data(data):
     return True, ""
 
 
-def validate_pagination_params(page: str, per_page: str) -> tuple[bool, str, dict]:
+def validate_pagination_params(page, per_page):
     """Validate pagination parameters."""
     try:
         page_num = int(page) if page else 1
